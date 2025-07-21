@@ -10,24 +10,24 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 text-white text-sm font-medium mb-8 animate-fade-in-up">
+          <div className="inline-flex items-center gap-2 bg-white/30 backdrop-blur-sm rounded-full px-4 py-2 text-white text-sm font-semibold mb-8 animate-fade-in-up border border-white/20">
             <span className="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
             Automatize. Implemente. Simplifique.
           </div>
           
           {/* Main Content */}
           <div className="space-y-8 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight text-shadow">
+            <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight text-shadow drop-shadow-lg">
               Publique sua{" "}
-              <span className="text-accent">landing-page</span>{" "}
+              <span className="text-accent font-extrabold drop-shadow-md">landing-page</span>{" "}
               em qualquer hospedagem compartilhada
             </h1>
             
-            <p className="text-xl text-white/90 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-xl text-white font-semibold leading-relaxed max-w-2xl mx-auto drop-shadow-md">
               <strong>Zero configuração técnica</strong>
             </p>
             
-            <p className="text-lg text-white/80 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-lg text-white/95 leading-relaxed max-w-2xl mx-auto drop-shadow-sm">
               Cole o link do seu repositório{" "}
               <span className="inline-flex items-center gap-1 font-semibold">
                 <Github className="w-5 h-5" />
@@ -48,7 +48,7 @@ const Hero = () => {
               <Button
                 variant="outline"
                 size="lg"
-                className="btn-secondary bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white hover:text-primary"
+                className="btn-secondary bg-white/20 backdrop-blur-sm border-white/50 text-white font-semibold hover:bg-white hover:text-primary shadow-lg"
               >
                 Ver demonstração
               </Button>
@@ -62,7 +62,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-accent/30 to-primary/30 rounded-2xl blur-2xl"></div>
               
               {/* Main mockup container */}
-              <div className="relative z-10 bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+              <div className="relative z-10 bg-white/15 backdrop-blur-md rounded-2xl p-8 border border-white/30 shadow-2xl">
                 <div className="grid md:grid-cols-3 gap-6 items-center">
                   {/* GitHub */}
                   <div className="flex flex-col items-center space-y-3 p-4 bg-white/5 rounded-xl border border-white/10">
