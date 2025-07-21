@@ -6,25 +6,25 @@ const steps = [
     icon: Edit3,
     title: "Crie",
     description: "sua landing page em qualquer construtor de páginas.",
-    color: "from-blue-500 to-blue-600"
+    color: "from-primary to-primary/80"
   },
   {
     icon: Github,
     title: "Exporte",
     description: "o projeto para o seu GitHub.",
-    color: "from-purple-500 to-purple-600"
+    color: "from-accent to-accent/80"
   },
   {
     icon: Link,
     title: "Cole",
     description: "o link do repositório no Deployer.",
-    color: "from-indigo-500 to-indigo-600"
+    color: "from-primary/80 to-primary"
   },
   {
     icon: Rocket,
     title: "Pronto!",
     description: "Sua página está no ar e pronta para vender.",
-    color: "from-green-500 to-green-600"
+    color: "from-accent/80 to-accent"
   }
 ];
 
