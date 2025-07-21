@@ -1,29 +1,26 @@
+
 import { Edit3, Github, Link, Rocket } from "lucide-react";
 
 const steps = [
   {
-    number: "1",
     icon: Edit3,
     title: "Crie",
     description: "sua landing page em qualquer construtor de páginas.",
     color: "from-blue-500 to-blue-600"
   },
   {
-    number: "2",
     icon: Github,
     title: "Exporte",
     description: "o projeto para o seu GitHub.",
     color: "from-purple-500 to-purple-600"
   },
   {
-    number: "3",
     icon: Link,
     title: "Cole",
     description: "o link do repositório no Deployer.",
     color: "from-indigo-500 to-indigo-600"
   },
   {
-    number: "4",
     icon: Rocket,
     title: "Pronto!",
     description: "Sua página está no ar e pronta para vender.",
@@ -53,16 +50,12 @@ const HowItWorks = () => {
             >
               {/* Connection line */}
               {index < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-16 left-full w-full h-0.5 bg-gradient-to-r from-primary/30 to-transparent z-0"></div>
+                <div className="hidden lg:block absolute top-20 left-full w-full h-0.5 bg-gradient-to-r from-primary/30 to-transparent z-0"></div>
               )}
               
               <div className="card-professional text-center relative z-10 h-full">
-                <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br ${step.color} text-white mb-6 font-bold text-xl group-hover:scale-110 transition-transform duration-300`}>
-                  {step.number}
-                </div>
-                
-                <div className="mb-4">
-                  <step.icon className="w-8 h-8 text-primary mx-auto" />
+                <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br ${step.color} text-white mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                  <step.icon className="w-8 h-8" />
                 </div>
                 
                 <h3 className="text-xl font-semibold text-foreground mb-3">
