@@ -4,32 +4,32 @@ import { ArrowRight, Github, Monitor, Server, Zap } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden gradient-hero min-h-[80vh] flex items-center">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20"></div>
+    <section className="relative overflow-hidden bg-purple-50 min-h-[80vh] flex items-center">
+      <div className="absolute inset-0 bg-gradient-to-br from-purple-100/50 to-violet-200/50"></div>
       
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-white/30 backdrop-blur-sm rounded-full px-4 py-2 text-white text-sm font-semibold mb-8 animate-fade-in-up border border-white/20">
+          <div className="inline-flex items-center gap-2 bg-purple-100 backdrop-blur-sm rounded-full px-4 py-2 text-purple-800 text-sm font-semibold mb-8 animate-fade-in-up border border-purple-200">
             <span className="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
             Automatize. Implemente. Simplifique.
           </div>
           
           {/* Main Content */}
           <div className="space-y-8 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight text-shadow drop-shadow-lg">
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-800 leading-tight">
               Publique sua{" "}
-              <span className="text-accent font-extrabold drop-shadow-md">landing-page</span>{" "}
+              <span className="text-accent font-extrabold">landing-page</span>{" "}
               em qualquer hospedagem compartilhada
             </h1>
             
-            <p className="text-xl text-white font-semibold leading-relaxed max-w-2xl mx-auto drop-shadow-md">
+            <p className="text-xl text-gray-700 font-semibold leading-relaxed max-w-2xl mx-auto">
               <strong>Zero configuração técnica</strong>
             </p>
             
-            <p className="text-lg text-white/95 leading-relaxed max-w-2xl mx-auto drop-shadow-sm">
+            <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
               Cole o link do seu repositório{" "}
-              <span className="inline-flex items-center gap-1 font-semibold">
+              <span className="inline-flex items-center gap-1 font-semibold text-gray-700">
                 <Github className="w-5 h-5" />
                 GitHub
               </span>{" "}
@@ -48,7 +48,7 @@ const Hero = () => {
               <Button
                 variant="outline"
                 size="lg"
-                className="btn-secondary bg-white/20 backdrop-blur-sm border-white/50 text-white font-semibold hover:bg-white hover:text-primary shadow-lg"
+                className="bg-white border-2 border-primary text-primary font-semibold hover:bg-primary hover:text-white shadow-lg"
               >
                 Ver demonstração
               </Button>
@@ -59,17 +59,17 @@ const Hero = () => {
           <div className="mt-16 animate-scale-in" style={{ animationDelay: '0.4s' }}>
             <div className="relative max-w-3xl mx-auto">
               {/* Background glow */}
-              <div className="absolute inset-0 bg-gradient-to-br from-accent/30 to-primary/30 rounded-2xl blur-2xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20 rounded-2xl blur-xl"></div>
               
               {/* Main mockup container */}
-              <div className="relative z-10 bg-white/15 backdrop-blur-md rounded-2xl p-8 border border-white/30 shadow-2xl">
+              <div className="relative z-10 bg-white rounded-2xl p-8 border border-gray-200 shadow-xl">
                 <div className="grid md:grid-cols-3 gap-6 items-center">
                   {/* GitHub */}
-                  <div className="flex flex-col items-center space-y-3 p-4 bg-white/5 rounded-xl border border-white/10">
-                    <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center">
-                      <Github className="w-6 h-6 text-white" />
+                  <div className="flex flex-col items-center space-y-3 p-4 bg-white rounded-xl border border-gray-100 shadow-sm">
+                    <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
+                      <Github className="w-6 h-6 text-gray-600" />
                     </div>
-                    <span className="text-white/90 font-medium">GitHub Repo</span>
+                    <span className="text-gray-700 font-medium">GitHub Repo</span>
                   </div>
                   
                   {/* Arrow with animation */}
@@ -82,11 +82,11 @@ const Hero = () => {
                   </div>
                   
                   {/* Server */}
-                  <div className="flex flex-col items-center space-y-3 p-4 bg-white/5 rounded-xl border border-white/10">
-                    <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center">
-                      <Server className="w-6 h-6 text-white" />
+                  <div className="flex flex-col items-center space-y-3 p-4 bg-white rounded-xl border border-gray-100 shadow-sm">
+                    <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
+                      <Server className="w-6 h-6 text-gray-600" />
                     </div>
-                    <span className="text-white/90 font-medium">Hospedagem</span>
+                    <span className="text-gray-700 font-medium">Hospedagem</span>
                   </div>
                 </div>
                 
@@ -102,7 +102,7 @@ const Hero = () => {
       </div>
       
       {/* Decorative elements */}
-      <div className="absolute top-20 right-20 w-32 h-32 bg-white/10 rounded-full blur-xl"></div>
+      <div className="absolute top-20 right-20 w-32 h-32 bg-purple-200/20 rounded-full blur-xl"></div>
       <div className="absolute bottom-20 left-20 w-24 h-24 bg-accent/20 rounded-full blur-xl"></div>
     </section>
   );

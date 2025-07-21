@@ -1,10 +1,11 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 
 const FinalCTA = () => {
   return (
-    <section className="relative py-20 gradient-hero overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20"></div>
+    <section className="relative py-20 bg-slate-800 overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-900"></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-4xl mx-auto animate-fade-in-up">
@@ -39,9 +40,9 @@ const FinalCTA = () => {
       </div>
       
       {/* Decorative elements */}
-      <div className="absolute top-20 right-20 w-32 h-32 bg-white/10 rounded-full blur-xl"></div>
-      <div className="absolute bottom-20 left-20 w-24 h-24 bg-accent/20 rounded-full blur-xl"></div>
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-primary/10 to-accent/10 rounded-full blur-3xl"></div>
+      <div className="absolute top-20 right-20 w-32 h-32 bg-slate-600/20 rounded-full blur-xl"></div>
+      <div className="absolute bottom-20 left-20 w-24 h-24 bg-slate-700/20 rounded-full blur-xl"></div>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-slate-700/10 to-slate-600/10 rounded-full blur-3xl"></div>
     </section>
   );
 };
