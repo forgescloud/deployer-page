@@ -8,7 +8,7 @@ const guarantees = [
   },
   {
     icon: Headphones,
-    title: "Suporte humano 24×7",
+    title: "Suporte Humanizado",
     color: "text-purple-500"
   }
 ];
