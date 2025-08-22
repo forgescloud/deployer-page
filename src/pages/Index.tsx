@@ -5,6 +5,7 @@ import HowItWorks from "@/components/HowItWorks";
 import Guarantees from "@/components/Guarantees";
 import Testimonials from "@/components/Testimonials";
 import FinalCTA from "@/components/FinalCTA";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
       <Guarantees />
       <Testimonials />
       <FinalCTA />
+      <Footer />
     </div>
   );
 };
