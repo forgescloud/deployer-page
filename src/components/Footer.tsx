@@ -17,7 +17,7 @@ const Footer = () => {
                 {/* Linha final */}
                 <div className="border-t border-gray-800 pt-6 flex flex-wrap justify-center space-x-6 mb-6 text-sm text-gray-400">
                     <p className="text-gray-400 text-sm md:text-center">
-                        © {new Date().getFullYear()} Internettools CNPJ 23.360.326/0001-25 - Todos os direitos reservados.
+                        © {new Date().getFullYear()} Deployer | Internettools CNPJ 23.360.326/0001-25 - Todos os direitos reservados.
                     </p>
                 </div>
             </div>
