@@ -6,7 +6,10 @@ import path from "path";
 export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
-    port: 8080,
+    port: 3000,
+    allowedHosts: [
+      "dev.marklabs.com.br"
+    ]
   },
   plugins: [
     react(),
