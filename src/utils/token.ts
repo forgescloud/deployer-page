@@ -10,35 +10,16 @@ export function generateVerificationUrl(baseUrl, email, token, expiresAt) {
 // Valida no front (quando o usuário acessar o link)
 export function validateVerificationParams() {
   const params = new URLSearchParams(window.location.search);
-  const email = params.get("email");
-  const token = params.get("token");
-  const expiresAt = params.get("expiresAt");
+  const email = params.get("a");
+  // const token = params.get("t");
 
-  if (!email || !token || !expiresAt) {
+  // if (!email || !token ) {
+  //   return { status: "error", message: "Parâmetros inválidos." };
+  // }
+
+  if (!email) {
     return { status: "error", message: "Parâmetros inválidos." };
   }
 
-  const now = Date.now();
-  if (now > parseInt(expiresAt)) {
-    return { status: "error", message: "Link expirado." };
-  }
-
-  return { status: "success", email, token };
+  return { status: "success", email};
 }
-
-// Exemplo de uso no front-end:
-//
-// Na página de verificação (ex: /verify/index.html):
-//
-// import { validateVerificationParams } from "./utils/token.js";
-//
-// window.addEventListener("DOMContentLoaded", () => {
-//   const result = validateVerificationParams();
-//   const container = document.getElementById("verify-result");
-//
-//   if (result.status === "success") {
-//     container.innerText = `E-mail ${result.email} confirmado com sucesso!`;
-//   } else {
-//     container.innerText = result.message;
-//   }
-// });
