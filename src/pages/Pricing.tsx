@@ -31,21 +31,21 @@ type Plan = {
 
 const plans: readonly Plan[] = [
     {
-        name: "Starting",
+        name: "Start",
         copy: "Do GitHub ao ar em minutos. Automatize a publicação de sites estáticos com um processo simples e rápido, sem complicações manuais.",
         popular: false,
         options: [
             {
                 billing: "monthly",
-                price: 47,
+                price: 97,
                 deploys: 20,
-                checkoutUrl: "https://seguro.deployer.com.br/subscribe/plano-starting-mensal",
+                checkoutUrl: "https://seguro.deployer.com.br/subscribe/start-mensal",
             },
             {
                 billing: "annual",
-                price: 470,
+                price: 970,
                 deploys: 240,
-                checkoutUrl: "https://seguro.deployer.com.br/subscribe/plano-starting-anual",
+                checkoutUrl: "https://seguro.deployer.com.br/subscribe/start-anuall",
                 savingsLabel: "2 meses grátis",
             },
         ],
@@ -57,15 +57,15 @@ const plans: readonly Plan[] = [
         options: [
             {
                 billing: "monthly",
-                price: 129,
+                price: 197,
                 deploys: 100,
                 checkoutUrl: "https://seguro.deployer.com.br/subscribe/plano-plus-mensall",
             },
             {
                 billing: "annual",
-                price: 1290,
+                price: 1197,
                 deploys: 1200,
-                checkoutUrl: "https://seguro.deployer.com.br/subscribe/deployer-plus-anual",
+                checkoutUrl: "https://seguro.deployer.com.br/subscribe/plus-anual-1",
                 savingsLabel: "2 meses grátis",
             },
         ],
