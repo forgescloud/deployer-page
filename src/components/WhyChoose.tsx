@@ -6,7 +6,7 @@ const features = [
     description: "Do GitHub direto para sua hospedagem, sem comandos ou scripts."
   },
   {
-    title: "Compatível com todas as hospedagens compartilhadas",
+    title: "Compatível com todas as hospedagens",
     description: "Basta acesso FTP."
   },
   {

@@ -1,7 +1,7 @@
 // Gera um token no front (por exemplo, quando o backend responder)
 export function generateVerificationUrl(baseUrl, email, token, expiresAt) {
   const url = new URL(baseUrl);
-  url.searchParams.set("email", email);
+  url.searchParams.set("a", email);
   url.searchParams.set("token", token);
   url.searchParams.set("expiresAt", expiresAt.toString());
   return url.toString();
