@@ -5,7 +5,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, } from
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const DEMO_VIDEO_URL =
-  "https://www.youtube.com/embed/VIDEO_ID?autoplay=1&rel=0&modestbranding=1";
+  "https://stream.adilo.com/adilo-encoding/bxwIXUHtGtzc0g7s/5KGRMun9/720p.mp4";
 
 const Hero = () => {
   return (
