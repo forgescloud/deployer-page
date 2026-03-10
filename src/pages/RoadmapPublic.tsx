@@ -123,7 +123,7 @@ const RoadmapPublicPage = () => {
 
             <div className="mt-8 flex flex-wrap gap-3">
               <Button asChild className="btn-hero">
-                <HashNavLink to="/">
+                <HashNavLink to="/" sectionId="pricing">
                   Conhecer a plataforma
                   <ArrowRight className="h-4 w-4" />
                 </HashNavLink>

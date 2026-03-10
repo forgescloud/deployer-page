@@ -1,15 +1,16 @@
 import type { MouseEvent, ReactNode } from "react";
 
-import { buildHashRoute, goToPage } from "@/lib/navigation";
+import { buildHashRoute, goToPage, goToSection } from "@/lib/navigation";
 
 type HashNavLinkProps = {
   to: string;
+  sectionId?: string;
   className?: string;
   children: ReactNode;
   title?: string;
 };
 
-const HashNavLink = ({ to, className, children, title }: HashNavLinkProps) => {
+const HashNavLink = ({ to, sectionId, className, children, title }: HashNavLinkProps) => {
   const handleClick = (event: MouseEvent<HTMLAnchorElement>) => {
     if (
       event.defaultPrevented ||
@@ -23,6 +24,11 @@ const HashNavLink = ({ to, className, children, title }: HashNavLinkProps) => {
     }
 
     event.preventDefault();
+    if (sectionId) {
+      goToSection(to, sectionId);
+      return;
+    }
+
     goToPage(to);
   };
 

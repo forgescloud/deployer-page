@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import Benefits from "@/components/Benefits";
 import WhyChoose from "@/components/WhyChoose";
 import HowItWorks from "@/components/HowItWorks";
+import PricingSection from "@/components/PricingSection";
 import Guarantees from "@/components/Guarantees";
 import Testimonials from "@/components/Testimonials";
 import FinalCTA from "@/components/FinalCTA";
@@ -14,6 +15,7 @@ const Index = () => {
       <Benefits />
       <WhyChoose />
       <HowItWorks />
+      <PricingSection />
       <Guarantees />
       <Testimonials />
       <FinalCTA />

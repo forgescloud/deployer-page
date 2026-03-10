@@ -8,6 +8,9 @@ const Footer = () => {
           <HashNavLink to="/" className="transition hover:text-white">
             Home
           </HashNavLink>
+          <HashNavLink to="/" sectionId="pricing" className="transition hover:text-white">
+            Planos
+          </HashNavLink>
           <HashNavLink to="/docs" className="transition hover:text-white">
             Docs
           </HashNavLink>
