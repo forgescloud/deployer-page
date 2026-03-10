@@ -113,12 +113,6 @@ const DocsPage = () => {
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
-              <Button asChild className="btn-hero">
-                <HashNavLink to="/pricing">
-                  Ver planos
-                  <ArrowUpRight className="h-4 w-4" />
-                </HashNavLink>
-              </Button>
               <Button
                 type="button"
                 variant="outline"
